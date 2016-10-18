@@ -1,0 +1,8 @@
+/etc/resolv.conf
+/etc/passwd
+/etc/network/interfaces
+/var/log/apache2/access.log
+/var/log/apache2/error.log
+/home/ckhung/public_html/index.php
+/home/ckhung/public_html/b/js/console.php
+/home/ckhung/public_html/b/re/intro.php
