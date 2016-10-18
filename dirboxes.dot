@@ -1,0 +1,99 @@
+digraph G{
+    rankdir = LR;
+    overlap = scale;
+    # http://www.graphviz.org/content/global-subgraph-style-statements
+    graph [shape="folder", style="rounded"];
+    node [shape="note", color="blue", fontcolor="blue"];
+    edge [style=invis];
+    {"passwd" "store.log"} -> "intro.php";
+    "intro.php" -> { "ex1.sh" "hw2.sh" "qz3.sh" };
+    "ex1.sh" -> { "pr4.sh" "ts5.sh" };
+subgraph cluster {
+  label="/";
+  subgraph cluster_home {
+    label="home";
+    subgraph cluster_home_s10421 {
+      label="s10421";
+      subgraph cluster_home_s10421_www {
+        label="www";
+        "ex1.sh";
+      }
+    }
+    subgraph cluster_home_s10423 {
+      label="s10423";
+      subgraph cluster_home_s10423_www {
+        label="www";
+        "qz3.sh";
+      }
+    }
+    subgraph cluster_home_s10425 {
+      label="s10425";
+      subgraph cluster_home_s10425_www {
+        label="www";
+        "ts5.sh";
+      }
+    }
+    subgraph cluster_home_ckhung {
+      label="ckhung";
+      subgraph cluster_home_ckhung_www {
+        label="www";
+        "index.php";
+        subgraph cluster_home_ckhung_www_b {
+          label="b";
+          subgraph cluster_home_ckhung_www_b_js {
+            label="js";
+            "console.php";
+          }
+          subgraph cluster_home_ckhung_www_b_re {
+            label="re";
+            "intro.php";
+          }
+          subgraph cluster_home_ckhung_www_b_pl {
+            label="pl";
+            "idiom.php";
+          }
+        }
+      }
+    }
+    subgraph cluster_home_s10422 {
+      label="s10422";
+      subgraph cluster_home_s10422_www {
+        label="www";
+        "hw2.sh";
+      }
+    }
+    subgraph cluster_home_s10424 {
+      label="s10424";
+      subgraph cluster_home_s10424_www {
+        label="www";
+        "pr4.sh";
+      }
+    }
+  }
+  subgraph cluster_etc {
+    label="etc";
+    "passwd";
+    "resolv.conf";
+    "shadow";
+  }
+  subgraph cluster_var {
+    label="var";
+    subgraph cluster_var_log {
+      label="log";
+      subgraph cluster_var_log_squid {
+        label="squid";
+        "store.log";
+      }
+      subgraph cluster_var_log_apache2 {
+        label="apache2";
+        "access.log";
+        "error.log";
+      }
+      subgraph cluster_var_log_cups {
+        label="cups";
+        "error";
+      }
+    }
+  }
+}
+}

@@ -1,8 +1,21 @@
 /etc/resolv.conf
 /etc/passwd
-/etc/network/interfaces
+/etc/shadow
 /var/log/apache2/access.log
 /var/log/apache2/error.log
-/home/ckhung/public_html/index.php
-/home/ckhung/public_html/b/js/console.php
-/home/ckhung/public_html/b/re/intro.php
+/var/log/cups/error
+/var/log/squid/store.log
+/home/ckhung/www/index.php
+/home/ckhung/www/b/js/console.php
+/home/ckhung/www/b/re/intro.php
+/home/ckhung/www/b/pl/idiom.php
+/home/s10421/www/ex1.sh
+/home/s10422/www/hw2.sh
+/home/s10423/www/qz3.sh
+/home/s10424/www/pr4.sh
+/home/s10425/www/ts5.sh
+# add these after .dot file is generated:
+#    {"passwd" "store.log"} -> "intro.php";
+#    "intro.php" -> { "ex1.sh" "hw2.sh" "qz3.sh" };
+#    "ex1.sh" -> { "pr4.sh" "ts5.sh" };
+

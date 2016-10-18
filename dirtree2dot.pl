@@ -7,10 +7,10 @@ my ($DT, @seg);
 
 $DT = {};
 while (<>) {
+    next if /^\s*#/;
     chomp;
     s#^/##;
     @seg = split /\//;
-    print "@seg\n";
     my ($s, $p);
     $p = $DT;
     foreach $s (@seg) {
@@ -19,20 +19,39 @@ while (<>) {
     }
 }
 
+print <<EOF;
+digraph G{
+    rankdir = LR;
+    overlap = scale;
+    # http://www.graphviz.org/content/global-subgraph-style-statements
+    graph [shape="folder", style="rounded"];
+    node [shape="note", color="blue", fontcolor="blue"];
+    edge [style=invis];
+EOF
+
 DirTree2dot($DT);
+
+print "}\n";
 
 sub DirTree2dot {
     my ($DT, $prefix) = @_;
     $prefix = '' unless defined $prefix;
-    my (@x, $level, $indent, $k);
+    my ($name, @x, $level, $indent, $k);
+    ($name) = $prefix =~ /.*_(.*)$/;
+    $name = '/' unless $name;
     @x = $prefix =~ /(_)/g;
     $level = $#x + 1;
     $indent = ' ' x ($level*2);
-    print($indent . "subgraph cluster$prefix {\n");
-    foreach $k (keys %$DT) {
-	DirTree2dot($DT->{$k}, $prefix . "_$k");
+    @x = keys %$DT;
+    if ($#x >= 0) {
+	print($indent . qq(subgraph cluster$prefix {\n$indent  label="$name";\n));
+	foreach $k (@x) {
+	    DirTree2dot($DT->{$k}, $prefix . "_$k");
+	}
+	print($indent . "}\n");
+    } else {
+	print(qq($indent"$name";\n));
     }
-    print($indent . "}\n");
 }
 
 # $Data::Dumper::Indent = 1;
