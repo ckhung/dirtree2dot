@@ -1,0 +1,99 @@
+digraph G{
+  rankdir = LR;
+  overlap = scale;
+  # http://www.graphviz.org/content/global-subgraph-style-statements
+  graph [shape="folder", style="rounded"];
+  node [shape="note", color="blue", fontcolor="blue"];
+  edge [style=invis];
+  subgraph "cluster" {
+    label="/";
+    subgraph "cluster_etc" {
+      label="etc";
+      "_etc_shadow" [ label="shadow"];
+      "_etc_passwd" [ label="passwd"];
+      "_etc_resolv.conf" [ label="resolv.conf"];
+    }
+    subgraph "cluster_var" {
+      label="var";
+      subgraph "cluster_var_log" {
+        label="log";
+        subgraph "cluster_var_log_apache2" {
+          label="apache2";
+          "_var_log_apache2_access.log" [ label="access.log"];
+          "_var_log_apache2_error.log" [ label="error.log"];
+        }
+        subgraph "cluster_var_log_cups" {
+          label="cups";
+          "_var_log_cups_error" [ label="error"];
+        }
+        subgraph "cluster_var_log_squid" {
+          label="squid";
+          "_var_log_squid_store.log" [ label="store.log"];
+        }
+      }
+    }
+    subgraph "cluster_home" {
+      label="home";
+      subgraph "cluster_home_s10422" {
+        label="s10422";
+        subgraph "cluster_home_s10422_www" {
+          label="www";
+          "_home_s10422_www_hw2.sh" [ label="hw2.sh"];
+        }
+      }
+      subgraph "cluster_home_s10423" {
+        label="s10423";
+        subgraph "cluster_home_s10423_www" {
+          label="www";
+          "_home_s10423_www_qz3.sh" [ label="qz3.sh"];
+        }
+      }
+      subgraph "cluster_home_s10421" {
+        label="s10421";
+        subgraph "cluster_home_s10421_www" {
+          label="www";
+          "_home_s10421_www_ex1.sh" [ label="ex1.sh"];
+        }
+      }
+      subgraph "cluster_home_s10425" {
+        label="s10425";
+        subgraph "cluster_home_s10425_www" {
+          label="www";
+          "_home_s10425_www_ts5.sh" [ label="ts5.sh"];
+        }
+      }
+      subgraph "cluster_home_s10424" {
+        label="s10424";
+        subgraph "cluster_home_s10424_www" {
+          label="www";
+          "_home_s10424_www_pr4.sh" [ label="pr4.sh"];
+        }
+      }
+      subgraph "cluster_home_ckhung" {
+        label="ckhung";
+        subgraph "cluster_home_ckhung_www" {
+          label="www";
+          "_home_ckhung_www_index.php" [ label="index.php"];
+          subgraph "cluster_home_ckhung_www_b" {
+            label="b";
+            subgraph "cluster_home_ckhung_www_b_pl" {
+              label="pl";
+              "_home_ckhung_www_b_pl_idiom.php" [ label="idiom.php"];
+            }
+            subgraph "cluster_home_ckhung_www_b_re" {
+              label="re";
+              "_home_ckhung_www_b_re_intro.php" [ label="intro.php"];
+            }
+            subgraph "cluster_home_ckhung_www_b_js" {
+              label="js";
+              "_home_ckhung_www_b_js_console.php" [ label="console.php"];
+            }
+          }
+        }
+      }
+    }
+  }
+  {"_etc_passwd" "_var_log_squid_store.log"} -> "_home_ckhung_www_b_re_intro.php";
+  "_home_ckhung_www_b_re_intro.php" -> { "_home_s10421_www_ex1.sh" "_home_s10422_www_hw2.sh" "_home_s10423_www_qz3.sh" };
+  "_home_s10421_www_ex1.sh" -> { "_home_s10424_www_pr4.sh" "_home_s10425_www_ts5.sh" };
+}

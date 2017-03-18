@@ -1,0 +1,21 @@
+/etc/resolv.conf
+/etc/passwd
+/etc/shadow
+/var/log/apache2/access.log
+/var/log/apache2/error.log
+/var/log/cups/error
+/var/log/squid/store.log
+/home/ckhung/www/index.php
+/home/ckhung/www/b/js/console.php
+/home/ckhung/www/b/re/intro.php
+/home/ckhung/www/b/pl/idiom.php
+/home/s10421/www/ex1.sh
+/home/s10422/www/hw2.sh
+/home/s10423/www/qz3.sh
+/home/s10424/www/pr4.sh
+/home/s10425/www/ts5.sh
+# After .dot file is generated, insert these before the last closing "}"
+# to make the graph more squarish than longish:
+#  {"_etc_passwd" "_var_log_squid_store.log"} -> "_home_ckhung_www_b_re_intro.php";
+#  "_home_ckhung_www_b_re_intro.php" -> { "_home_s10421_www_ex1.sh" "_home_s10422_www_hw2.sh" "_home_s10423_www_qz3.sh" };
+#  "_home_s10421_www_ex1.sh" -> { "_home_s10424_www_pr4.sh" "_home_s10425_www_ts5.sh" };
