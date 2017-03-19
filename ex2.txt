@@ -1,0 +1,19 @@
+/etc/fstab
+/etc/resolv.conf
+/etc/apache2/mods-available/userdir.conf
+/etc/apache2/mods-available/php7.0.conf
+/var/log/apache2/access.log
+/var/log/apache2/error.log
+/var/log/auth.log
+/home/stux/Desktop/dog.jpg
+/home/stux/train.jpg
+/home/stux/public_html/cake.jpg
+/media/sda1/hw/history.doc
+/media/sda1/hw/management.doc
+
+# After .dot file is generated, insert these before the last closing "}"
+# to make the graph more squarish than longish:
+#  "/var/log/apache2/error.log" ->
+#  "/etc/apache2/mods-available/userdir.conf" ->
+#  "/home/stux/Desktop/dog.jpg" ->
+#  "/media/sda1/hw/history.doc";

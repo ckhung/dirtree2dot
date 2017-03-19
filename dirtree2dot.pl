@@ -37,16 +37,16 @@ sub DirTree2dot {
     my ($DT, $fullpath) = @_;
     $fullpath = '' unless defined $fullpath;
     my ($name, @x, $level, $indent, $k);
-    ($name) = $fullpath =~ /.*_(.*)$/;
+    ($name) = $fullpath =~ m#.*/(.*)$#;
     $name = '/' unless $name;
-    @x = $fullpath =~ /(_)/g;
+    @x = $fullpath =~ m#(/)#g;
     $level = $#x + 1;
     $indent = ' ' x ($level*2+2);
     @x = keys %$DT;
     if ($#x >= 0) {
 	print($indent . qq(subgraph "cluster$fullpath" {\n$indent  label="$name";\n));
 	foreach $k (@x) {
-	    DirTree2dot($DT->{$k}, $fullpath . "_$k");
+	    DirTree2dot($DT->{$k}, $fullpath . "/$k");
 	}
 	print($indent . "}\n");
     } else {
