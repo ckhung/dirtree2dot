@@ -11,9 +11,8 @@
 /media/sda1/hw/history.doc
 /media/sda1/hw/management.doc
 
-# After .dot file is generated, insert these before the last closing "}"
-# to make the graph more squarish than longish:
-#  "/var/log/apache2/error.log" ->
-#  "/etc/apache2/mods-available/userdir.conf" ->
-#  "/home/stux/Desktop/dog.jpg" ->
-#  "/media/sda1/hw/history.doc";
+# the invisible edges make the graph look more squarish than longish:
+@"/var/log/apache2/error.log" ->
+@"/etc/apache2/mods-available/userdir.conf" ->
+@"/home/stux/Desktop/dog.jpg" ->
+@"/media/sda1/hw/history.doc";

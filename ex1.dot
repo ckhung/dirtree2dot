@@ -7,33 +7,35 @@ digraph G{
   edge [style=invis];
   subgraph "cluster" {
     label="/";
-    subgraph "cluster/var" {
-      label="var";
-      subgraph "cluster/var/log" {
-        label="log";
-        subgraph "cluster/var/log/squid" {
-          label="squid";
-          "/var/log/squid/store.log" [ label="store.log"];
-        }
-        subgraph "cluster/var/log/apache2" {
-          label="apache2";
-          "/var/log/apache2/access.log" [ label="access.log"];
-          "/var/log/apache2/error.log" [ label="error.log"];
-        }
-        subgraph "cluster/var/log/cups" {
-          label="cups";
-          "/var/log/cups/error" [ label="error"];
-        }
-      }
-    }
     subgraph "cluster/etc" {
       label="etc";
       "/etc/resolv.conf" [ label="resolv.conf"];
-      "/etc/passwd" [ label="passwd"];
       "/etc/shadow" [ label="shadow"];
+      "/etc/passwd" [ label="passwd"];
     }
     subgraph "cluster/home" {
       label="home";
+      subgraph "cluster/home/s10424" {
+        label="s10424";
+        subgraph "cluster/home/s10424/www" {
+          label="www";
+          "/home/s10424/www/pr4.sh" [ label="pr4.sh"];
+        }
+      }
+      subgraph "cluster/home/s10423" {
+        label="s10423";
+        subgraph "cluster/home/s10423/www" {
+          label="www";
+          "/home/s10423/www/qz3.sh" [ label="qz3.sh"];
+        }
+      }
+      subgraph "cluster/home/s10425" {
+        label="s10425";
+        subgraph "cluster/home/s10425/www" {
+          label="www";
+          "/home/s10425/www/ts5.sh" [ label="ts5.sh"];
+        }
+      }
       subgraph "cluster/home/ckhung" {
         label="ckhung";
         subgraph "cluster/home/ckhung/www" {
@@ -56,18 +58,11 @@ digraph G{
           "/home/ckhung/www/index.php" [ label="index.php"];
         }
       }
-      subgraph "cluster/home/s10423" {
-        label="s10423";
-        subgraph "cluster/home/s10423/www" {
+      subgraph "cluster/home/s10422" {
+        label="s10422";
+        subgraph "cluster/home/s10422/www" {
           label="www";
-          "/home/s10423/www/qz3.sh" [ label="qz3.sh"];
-        }
-      }
-      subgraph "cluster/home/s10424" {
-        label="s10424";
-        subgraph "cluster/home/s10424/www" {
-          label="www";
-          "/home/s10424/www/pr4.sh" [ label="pr4.sh"];
+          "/home/s10422/www/hw2.sh" [ label="hw2.sh"];
         }
       }
       subgraph "cluster/home/s10421" {
@@ -77,18 +72,23 @@ digraph G{
           "/home/s10421/www/ex1.sh" [ label="ex1.sh"];
         }
       }
-      subgraph "cluster/home/s10422" {
-        label="s10422";
-        subgraph "cluster/home/s10422/www" {
-          label="www";
-          "/home/s10422/www/hw2.sh" [ label="hw2.sh"];
+    }
+    subgraph "cluster/var" {
+      label="var";
+      subgraph "cluster/var/log" {
+        label="log";
+        subgraph "cluster/var/log/cups" {
+          label="cups";
+          "/var/log/cups/error" [ label="error"];
         }
-      }
-      subgraph "cluster/home/s10425" {
-        label="s10425";
-        subgraph "cluster/home/s10425/www" {
-          label="www";
-          "/home/s10425/www/ts5.sh" [ label="ts5.sh"];
+        subgraph "cluster/var/log/squid" {
+          label="squid";
+          "/var/log/squid/store.log" [ label="store.log"];
+        }
+        subgraph "cluster/var/log/apache2" {
+          label="apache2";
+          "/var/log/apache2/error.log" [ label="error.log"];
+          "/var/log/apache2/access.log" [ label="access.log"];
         }
       }
     }
@@ -96,4 +96,5 @@ digraph G{
   {"/etc/passwd" "/var/log/squid/store.log"} -> "/home/ckhung/www/b/re/intro.php";
   "/home/ckhung/www/b/re/intro.php" -> { "/home/s10421/www/ex1.sh" "/home/s10422/www/hw2.sh" "/home/s10423/www/qz3.sh" };
   "/home/s10421/www/ex1.sh" -> { "/home/s10424/www/pr4.sh" "/home/s10425/www/ts5.sh" };
+
 }

@@ -3,24 +3,33 @@
 use strict;
 use Data::Dumper;
 
-my ($DT, @seg);
+my ($DT, @seg, @passthrough);
 
 $DT = {};
 while (<>) {
-    next if /^\s*#/;
     chomp;
-    s#^/##;
-    @seg = split /\//;
-    my ($s, $p);
-    $p = $DT;
-    foreach $s (@seg) {
-	$p->{$s} = {} unless exists($p->{$s});
-	$p = $p->{$s};
+    s/#.*//;
+    s/^\s*//;
+    if (s#^/##) {
+	# a path
+	@seg = split /\//;
+	my ($s, $p);
+	$p = $DT;
+	foreach $s (@seg) {
+	    $p->{$s} = {} unless exists($p->{$s});
+	    $p = $p->{$s};
+	}
+    } elsif (s#^@##) {
+	push @passthrough, "  $_\n";
+    } elsif (/^$/) {
+	next;
+    } else {
+	print "warning: ignored: $_\n";
     }
 }
 
 print <<EOF;
-digraph G{
+digraph G {
   rankdir = LR;
   overlap = scale;
   # http://www.graphviz.org/content/global-subgraph-style-statements
@@ -30,8 +39,7 @@ digraph G{
 EOF
 
 DirTree2dot($DT);
-
-print "}\n";
+print(@passthrough, "\n}\n");
 
 sub DirTree2dot {
     my ($DT, $fullpath) = @_;

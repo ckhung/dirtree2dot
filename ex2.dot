@@ -1,4 +1,4 @@
-digraph G{
+digraph G {
   rankdir = LR;
   overlap = scale;
   # http://www.graphviz.org/content/global-subgraph-style-statements
@@ -11,40 +11,15 @@ digraph G{
       label="home";
       subgraph "cluster/home/stux" {
         label="stux";
-        subgraph "cluster/home/stux/Desktop" {
-          label="Desktop";
-          "/home/stux/Desktop/dog.jpg" [ label="dog.jpg"];
-        }
         subgraph "cluster/home/stux/public_html" {
           label="public_html";
           "/home/stux/public_html/cake.jpg" [ label="cake.jpg"];
         }
         "/home/stux/train.jpg" [ label="train.jpg"];
-      }
-    }
-    subgraph "cluster/etc" {
-      label="etc";
-      "/etc/resolv.conf" [ label="resolv.conf"];
-      subgraph "cluster/etc/apache2" {
-        label="apache2";
-        subgraph "cluster/etc/apache2/mods-available" {
-          label="mods-available";
-          "/etc/apache2/mods-available/php7.0.conf" [ label="php7.0.conf"];
-          "/etc/apache2/mods-available/userdir.conf" [ label="userdir.conf"];
+        subgraph "cluster/home/stux/Desktop" {
+          label="Desktop";
+          "/home/stux/Desktop/dog.jpg" [ label="dog.jpg"];
         }
-      }
-      "/etc/fstab" [ label="fstab"];
-    }
-    subgraph "cluster/var" {
-      label="var";
-      subgraph "cluster/var/log" {
-        label="log";
-        subgraph "cluster/var/log/apache2" {
-          label="apache2";
-          "/var/log/apache2/access.log" [ label="access.log"];
-          "/var/log/apache2/error.log" [ label="error.log"];
-        }
-        "/var/log/auth.log" [ label="auth.log"];
       }
     }
     subgraph "cluster/media" {
@@ -58,9 +33,35 @@ digraph G{
         }
       }
     }
+    subgraph "cluster/etc" {
+      label="etc";
+      "/etc/resolv.conf" [ label="resolv.conf"];
+      "/etc/fstab" [ label="fstab"];
+      subgraph "cluster/etc/apache2" {
+        label="apache2";
+        subgraph "cluster/etc/apache2/mods-available" {
+          label="mods-available";
+          "/etc/apache2/mods-available/php7.0.conf" [ label="php7.0.conf"];
+          "/etc/apache2/mods-available/userdir.conf" [ label="userdir.conf"];
+        }
+      }
+    }
+    subgraph "cluster/var" {
+      label="var";
+      subgraph "cluster/var/log" {
+        label="log";
+        "/var/log/auth.log" [ label="auth.log"];
+        subgraph "cluster/var/log/apache2" {
+          label="apache2";
+          "/var/log/apache2/error.log" [ label="error.log"];
+          "/var/log/apache2/access.log" [ label="access.log"];
+        }
+      }
+    }
   }
   "/var/log/apache2/error.log" ->
   "/etc/apache2/mods-available/userdir.conf" ->
   "/home/stux/Desktop/dog.jpg" ->
   "/media/sda1/hw/history.doc";
+
 }
