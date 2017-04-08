@@ -16,6 +16,6 @@
 /home/s10425/www/ts5.sh
 
 # the invisible edges make the graph look more squarish than longish:
-@{"/etc/passwd" "/var/log/squid/store.log"} -> "/home/ckhung/www/b/re/intro.php";
-@"/home/ckhung/www/b/re/intro.php" -> { "/home/s10421/www/ex1.sh" "/home/s10422/www/hw2.sh" "/home/s10423/www/qz3.sh" };
-@"/home/s10421/www/ex1.sh" -> { "/home/s10424/www/pr4.sh" "/home/s10425/www/ts5.sh" };
+@{"/etc/passwd" "/var/log/squid/store.log"} -> "/home/ckhung/www/b/re/intro.php" [style=invis];
+@"/home/ckhung/www/b/re/intro.php" -> { "/home/s10421/www/ex1.sh" "/home/s10422/www/hw2.sh" "/home/s10423/www/qz3.sh" } [style=invis];
+@"/home/s10421/www/ex1.sh" -> { "/home/s10424/www/pr4.sh" "/home/s10425/www/ts5.sh" } [style=invis];

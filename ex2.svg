@@ -21,57 +21,65 @@
 <path fill="none" stroke="black" d="M328,-47C328,-47 403,-47 403,-47 409,-47 415,-53 415,-59 415,-59 415,-278 415,-278 415,-284 409,-290 403,-290 403,-290 328,-290 328,-290 322,-290 316,-284 316,-278 316,-278 316,-59 316,-59 316,-53 322,-47 328,-47"/>
 <text text-anchor="middle" x="365.5" y="-274.8" font-family="Times,serif" font-size="14.00">stux</text>
 </g>
-<g id="clust4" class="cluster"><title>cluster/home/stux/public_html</title>
-<path fill="none" stroke="black" d="M336,-184C336,-184 395,-184 395,-184 401,-184 407,-190 407,-196 407,-196 407,-247 407,-247 407,-253 401,-259 395,-259 395,-259 336,-259 336,-259 330,-259 324,-253 324,-247 324,-247 324,-196 324,-196 324,-190 330,-184 336,-184"/>
-<text text-anchor="middle" x="365.5" y="-243.8" font-family="Times,serif" font-size="14.00">public_html</text>
+<g id="clust4" class="cluster"><title>cluster/home/stux/Desktop</title>
+<path fill="none" stroke="black" d="M340,-184C340,-184 390,-184 390,-184 396,-184 402,-190 402,-196 402,-196 402,-247 402,-247 402,-253 396,-259 390,-259 390,-259 340,-259 340,-259 334,-259 328,-253 328,-247 328,-247 328,-196 328,-196 328,-190 334,-184 340,-184"/>
+<text text-anchor="middle" x="365" y="-243.8" font-family="Times,serif" font-size="14.00">Desktop</text>
 </g>
-<g id="clust5" class="cluster"><title>cluster/home/stux/Desktop</title>
-<path fill="none" stroke="black" d="M340,-101C340,-101 390,-101 390,-101 396,-101 402,-107 402,-113 402,-113 402,-164 402,-164 402,-170 396,-176 390,-176 390,-176 340,-176 340,-176 334,-176 328,-170 328,-164 328,-164 328,-113 328,-113 328,-107 334,-101 340,-101"/>
-<text text-anchor="middle" x="365" y="-160.8" font-family="Times,serif" font-size="14.00">Desktop</text>
+<g id="clust5" class="cluster"><title>cluster/home/stux/public_html</title>
+<path fill="none" stroke="black" d="M336,-101C336,-101 395,-101 395,-101 401,-101 407,-107 407,-113 407,-113 407,-164 407,-164 407,-170 401,-176 395,-176 395,-176 336,-176 336,-176 330,-176 324,-170 324,-164 324,-164 324,-113 324,-113 324,-107 330,-101 336,-101"/>
+<text text-anchor="middle" x="365.5" y="-160.8" font-family="Times,serif" font-size="14.00">public_html</text>
 </g>
-<g id="clust6" class="cluster"><title>cluster/media</title>
-<path fill="none" stroke="black" d="M451,-85C451,-85 585,-85 585,-85 591,-85 597,-91 597,-97 597,-97 597,-280 597,-280 597,-286 591,-292 585,-292 585,-292 451,-292 451,-292 445,-292 439,-286 439,-280 439,-280 439,-97 439,-97 439,-91 445,-85 451,-85"/>
-<text text-anchor="middle" x="518" y="-276.8" font-family="Times,serif" font-size="14.00">media</text>
+<g id="clust6" class="cluster"><title>cluster/var</title>
+<path fill="none" stroke="black" d="M28,-68C28,-68 124,-68 124,-68 130,-68 136,-74 136,-80 136,-80 136,-309 136,-309 136,-315 130,-321 124,-321 124,-321 28,-321 28,-321 22,-321 16,-315 16,-309 16,-309 16,-80 16,-80 16,-74 22,-68 28,-68"/>
+<text text-anchor="middle" x="76" y="-305.8" font-family="Times,serif" font-size="14.00">var</text>
 </g>
-<g id="clust7" class="cluster"><title>cluster/media/sda1</title>
-<path fill="none" stroke="black" d="M459,-93C459,-93 577,-93 577,-93 583,-93 589,-99 589,-105 589,-105 589,-249 589,-249 589,-255 583,-261 577,-261 577,-261 459,-261 459,-261 453,-261 447,-255 447,-249 447,-249 447,-105 447,-105 447,-99 453,-93 459,-93"/>
-<text text-anchor="middle" x="518" y="-245.8" font-family="Times,serif" font-size="14.00">sda1</text>
+<g id="clust7" class="cluster"><title>cluster/var/log</title>
+<path fill="none" stroke="black" d="M36,-76C36,-76 116,-76 116,-76 122,-76 128,-82 128,-88 128,-88 128,-278 128,-278 128,-284 122,-290 116,-290 116,-290 36,-290 36,-290 30,-290 24,-284 24,-278 24,-278 24,-88 24,-88 24,-82 30,-76 36,-76"/>
+<text text-anchor="middle" x="76" y="-274.8" font-family="Times,serif" font-size="14.00">log</text>
 </g>
-<g id="clust8" class="cluster"><title>cluster/media/sda1/hw</title>
-<path fill="none" stroke="black" d="M467,-101C467,-101 569,-101 569,-101 575,-101 581,-107 581,-113 581,-113 581,-218 581,-218 581,-224 575,-230 569,-230 569,-230 467,-230 467,-230 461,-230 455,-224 455,-218 455,-218 455,-113 455,-113 455,-107 461,-101 467,-101"/>
-<text text-anchor="middle" x="518" y="-214.8" font-family="Times,serif" font-size="14.00">hw</text>
+<g id="clust8" class="cluster"><title>cluster/var/log/apache2</title>
+<path fill="none" stroke="black" d="M44,-130C44,-130 108,-130 108,-130 114,-130 120,-136 120,-142 120,-142 120,-247 120,-247 120,-253 114,-259 108,-259 108,-259 44,-259 44,-259 38,-259 32,-253 32,-247 32,-247 32,-142 32,-142 32,-136 38,-130 44,-130"/>
+<text text-anchor="middle" x="76" y="-243.8" font-family="Times,serif" font-size="14.00">apache2</text>
 </g>
-<g id="clust9" class="cluster"><title>cluster/etc</title>
+<g id="clust9" class="cluster"><title>cluster/media</title>
+<path fill="none" stroke="black" d="M451,-114C451,-114 585,-114 585,-114 591,-114 597,-120 597,-126 597,-126 597,-309 597,-309 597,-315 591,-321 585,-321 585,-321 451,-321 451,-321 445,-321 439,-315 439,-309 439,-309 439,-126 439,-126 439,-120 445,-114 451,-114"/>
+<text text-anchor="middle" x="518" y="-305.8" font-family="Times,serif" font-size="14.00">media</text>
+</g>
+<g id="clust10" class="cluster"><title>cluster/media/sda1</title>
+<path fill="none" stroke="black" d="M459,-122C459,-122 577,-122 577,-122 583,-122 589,-128 589,-134 589,-134 589,-278 589,-278 589,-284 583,-290 577,-290 577,-290 459,-290 459,-290 453,-290 447,-284 447,-278 447,-278 447,-134 447,-134 447,-128 453,-122 459,-122"/>
+<text text-anchor="middle" x="518" y="-274.8" font-family="Times,serif" font-size="14.00">sda1</text>
+</g>
+<g id="clust11" class="cluster"><title>cluster/media/sda1/hw</title>
+<path fill="none" stroke="black" d="M467,-130C467,-130 569,-130 569,-130 575,-130 581,-136 581,-142 581,-142 581,-247 581,-247 581,-253 575,-259 569,-259 569,-259 467,-259 467,-259 461,-259 455,-253 455,-247 455,-247 455,-142 455,-142 455,-136 461,-130 467,-130"/>
+<text text-anchor="middle" x="518" y="-243.8" font-family="Times,serif" font-size="14.00">hw</text>
+</g>
+<g id="clust12" class="cluster"><title>cluster/etc</title>
 <path fill="none" stroke="black" d="M164,-16C164,-16 272,-16 272,-16 278,-16 284,-22 284,-28 284,-28 284,-309 284,-309 284,-315 278,-321 272,-321 272,-321 164,-321 164,-321 158,-321 152,-315 152,-309 152,-309 152,-28 152,-28 152,-22 158,-16 164,-16"/>
 <text text-anchor="middle" x="218" y="-305.8" font-family="Times,serif" font-size="14.00">etc</text>
 </g>
-<g id="clust10" class="cluster"><title>cluster/etc/apache2</title>
+<g id="clust13" class="cluster"><title>cluster/etc/apache2</title>
 <path fill="none" stroke="black" d="M172,-122C172,-122 264,-122 264,-122 270,-122 276,-128 276,-134 276,-134 276,-278 276,-278 276,-284 270,-290 264,-290 264,-290 172,-290 172,-290 166,-290 160,-284 160,-278 160,-278 160,-134 160,-134 160,-128 166,-122 172,-122"/>
 <text text-anchor="middle" x="218" y="-274.8" font-family="Times,serif" font-size="14.00">apache2</text>
 </g>
-<g id="clust11" class="cluster"><title>cluster/etc/apache2/mods&#45;available</title>
+<g id="clust14" class="cluster"><title>cluster/etc/apache2/mods&#45;available</title>
 <path fill="none" stroke="black" d="M180,-130C180,-130 256,-130 256,-130 262,-130 268,-136 268,-142 268,-142 268,-247 268,-247 268,-253 262,-259 256,-259 256,-259 180,-259 180,-259 174,-259 168,-253 168,-247 168,-247 168,-142 168,-142 168,-136 174,-130 180,-130"/>
 <text text-anchor="middle" x="218" y="-243.8" font-family="Times,serif" font-size="14.00">mods&#45;available</text>
 </g>
-<g id="clust12" class="cluster"><title>cluster/var</title>
-<path fill="none" stroke="black" d="M28,-16C28,-16 124,-16 124,-16 130,-16 136,-22 136,-28 136,-28 136,-257 136,-257 136,-263 130,-269 124,-269 124,-269 28,-269 28,-269 22,-269 16,-263 16,-257 16,-257 16,-28 16,-28 16,-22 22,-16 28,-16"/>
-<text text-anchor="middle" x="76" y="-253.8" font-family="Times,serif" font-size="14.00">var</text>
+<!-- /home/stux/Desktop/dog.jpg -->
+<g id="node1" class="node"><title>/home/stux/Desktop/dog.jpg</title>
+<polygon fill="none" stroke="blue" points="388,-228 336,-228 336,-192 394,-192 394,-222 388,-228"/>
+<polyline fill="none" stroke="blue" points="388,-228 388,-222 "/>
+<polyline fill="none" stroke="blue" points="394,-222 388,-222 "/>
+<text text-anchor="middle" x="365" y="-206.3" font-family="Times,serif" font-size="14.00" fill="blue">dog.jpg</text>
 </g>
-<g id="clust13" class="cluster"><title>cluster/var/log</title>
-<path fill="none" stroke="black" d="M36,-24C36,-24 116,-24 116,-24 122,-24 128,-30 128,-36 128,-36 128,-226 128,-226 128,-232 122,-238 116,-238 116,-238 36,-238 36,-238 30,-238 24,-232 24,-226 24,-226 24,-36 24,-36 24,-30 30,-24 36,-24"/>
-<text text-anchor="middle" x="76" y="-222.8" font-family="Times,serif" font-size="14.00">log</text>
+<!-- /media/sda1/hw/history.doc -->
+<g id="node7" class="node"><title>/media/sda1/hw/history.doc</title>
+<polygon fill="none" stroke="blue" points="550.5,-228 479.5,-228 479.5,-192 556.5,-192 556.5,-222 550.5,-228"/>
+<polyline fill="none" stroke="blue" points="550.5,-228 550.5,-222 "/>
+<polyline fill="none" stroke="blue" points="556.5,-222 550.5,-222 "/>
+<text text-anchor="middle" x="518" y="-206.3" font-family="Times,serif" font-size="14.00" fill="blue">history.doc</text>
 </g>
-<g id="clust14" class="cluster"><title>cluster/var/log/apache2</title>
-<path fill="none" stroke="black" d="M44,-78C44,-78 108,-78 108,-78 114,-78 120,-84 120,-90 120,-90 120,-195 120,-195 120,-201 114,-207 108,-207 108,-207 44,-207 44,-207 38,-207 32,-201 32,-195 32,-195 32,-90 32,-90 32,-84 38,-78 44,-78"/>
-<text text-anchor="middle" x="76" y="-191.8" font-family="Times,serif" font-size="14.00">apache2</text>
-</g>
-<!-- /home/stux/public_html/cake.jpg -->
-<g id="node1" class="node"><title>/home/stux/public_html/cake.jpg</title>
-<polygon fill="none" stroke="blue" points="390,-228 334,-228 334,-192 396,-192 396,-222 390,-228"/>
-<polyline fill="none" stroke="blue" points="390,-228 390,-222 "/>
-<polyline fill="none" stroke="blue" points="396,-222 390,-222 "/>
-<text text-anchor="middle" x="365" y="-206.3" font-family="Times,serif" font-size="14.00" fill="blue">cake.jpg</text>
-</g>
+<!-- /home/stux/Desktop/dog.jpg&#45;&gt;/media/sda1/hw/history.doc -->
 <!-- /home/stux/train.jpg -->
 <g id="node2" class="node"><title>/home/stux/train.jpg</title>
 <polygon fill="none" stroke="blue" points="390,-91 334,-91 334,-55 396,-55 396,-85 390,-91"/>
@@ -79,78 +87,70 @@
 <polyline fill="none" stroke="blue" points="396,-85 390,-85 "/>
 <text text-anchor="middle" x="365" y="-69.3" font-family="Times,serif" font-size="14.00" fill="blue">train.jpg</text>
 </g>
-<!-- /home/stux/Desktop/dog.jpg -->
-<g id="node3" class="node"><title>/home/stux/Desktop/dog.jpg</title>
-<polygon fill="none" stroke="blue" points="388,-145 336,-145 336,-109 394,-109 394,-139 388,-145"/>
-<polyline fill="none" stroke="blue" points="388,-145 388,-139 "/>
-<polyline fill="none" stroke="blue" points="394,-139 388,-139 "/>
-<text text-anchor="middle" x="365" y="-123.3" font-family="Times,serif" font-size="14.00" fill="blue">dog.jpg</text>
+<!-- /home/stux/public_html/cake.jpg -->
+<g id="node3" class="node"><title>/home/stux/public_html/cake.jpg</title>
+<polygon fill="none" stroke="blue" points="390,-145 334,-145 334,-109 396,-109 396,-139 390,-145"/>
+<polyline fill="none" stroke="blue" points="390,-145 390,-139 "/>
+<polyline fill="none" stroke="blue" points="396,-139 390,-139 "/>
+<text text-anchor="middle" x="365" y="-123.3" font-family="Times,serif" font-size="14.00" fill="blue">cake.jpg</text>
 </g>
-<!-- /media/sda1/hw/history.doc -->
-<g id="node5" class="node"><title>/media/sda1/hw/history.doc</title>
-<polygon fill="none" stroke="blue" points="550.5,-145 479.5,-145 479.5,-109 556.5,-109 556.5,-139 550.5,-145"/>
-<polyline fill="none" stroke="blue" points="550.5,-145 550.5,-139 "/>
-<polyline fill="none" stroke="blue" points="556.5,-139 550.5,-139 "/>
-<text text-anchor="middle" x="518" y="-123.3" font-family="Times,serif" font-size="14.00" fill="blue">history.doc</text>
+<!-- /var/log/auth.log -->
+<g id="node4" class="node"><title>/var/log/auth.log</title>
+<polygon fill="none" stroke="blue" points="100.5,-120 45.5,-120 45.5,-84 106.5,-84 106.5,-114 100.5,-120"/>
+<polyline fill="none" stroke="blue" points="100.5,-120 100.5,-114 "/>
+<polyline fill="none" stroke="blue" points="106.5,-114 100.5,-114 "/>
+<text text-anchor="middle" x="76" y="-98.3" font-family="Times,serif" font-size="14.00" fill="blue">auth.log</text>
 </g>
-<!-- /home/stux/Desktop/dog.jpg&#45;&gt;/media/sda1/hw/history.doc -->
+<!-- /var/log/apache2/access.log -->
+<g id="node5" class="node"><title>/var/log/apache2/access.log</title>
+<polygon fill="none" stroke="blue" points="106,-228 40,-228 40,-192 112,-192 112,-222 106,-228"/>
+<polyline fill="none" stroke="blue" points="106,-228 106,-222 "/>
+<polyline fill="none" stroke="blue" points="112,-222 106,-222 "/>
+<text text-anchor="middle" x="76" y="-206.3" font-family="Times,serif" font-size="14.00" fill="blue">access.log</text>
+</g>
+<!-- /var/log/apache2/error.log -->
+<g id="node6" class="node"><title>/var/log/apache2/error.log</title>
+<polygon fill="none" stroke="blue" points="102,-174 44,-174 44,-138 108,-138 108,-168 102,-174"/>
+<polyline fill="none" stroke="blue" points="102,-174 102,-168 "/>
+<polyline fill="none" stroke="blue" points="108,-168 102,-168 "/>
+<text text-anchor="middle" x="76" y="-152.3" font-family="Times,serif" font-size="14.00" fill="blue">error.log</text>
+</g>
+<!-- /etc/apache2/mods&#45;available/userdir.conf -->
+<g id="node11" class="node"><title>/etc/apache2/mods&#45;available/userdir.conf</title>
+<polygon fill="none" stroke="blue" points="253,-228 177,-228 177,-192 259,-192 259,-222 253,-228"/>
+<polyline fill="none" stroke="blue" points="253,-228 253,-222 "/>
+<polyline fill="none" stroke="blue" points="259,-222 253,-222 "/>
+<text text-anchor="middle" x="218" y="-206.3" font-family="Times,serif" font-size="14.00" fill="blue">userdir.conf</text>
+</g>
+<!-- /var/log/apache2/error.log&#45;&gt;/etc/apache2/mods&#45;available/userdir.conf -->
 <!-- /media/sda1/hw/management.doc -->
-<g id="node4" class="node"><title>/media/sda1/hw/management.doc</title>
-<polygon fill="none" stroke="blue" points="567,-199 463,-199 463,-163 573,-163 573,-193 567,-199"/>
-<polyline fill="none" stroke="blue" points="567,-199 567,-193 "/>
-<polyline fill="none" stroke="blue" points="573,-193 567,-193 "/>
-<text text-anchor="middle" x="518" y="-177.3" font-family="Times,serif" font-size="14.00" fill="blue">management.doc</text>
+<g id="node8" class="node"><title>/media/sda1/hw/management.doc</title>
+<polygon fill="none" stroke="blue" points="567,-174 463,-174 463,-138 573,-138 573,-168 567,-174"/>
+<polyline fill="none" stroke="blue" points="567,-174 567,-168 "/>
+<polyline fill="none" stroke="blue" points="573,-168 567,-168 "/>
+<text text-anchor="middle" x="518" y="-152.3" font-family="Times,serif" font-size="14.00" fill="blue">management.doc</text>
 </g>
 <!-- /etc/resolv.conf -->
-<g id="node6" class="node"><title>/etc/resolv.conf</title>
+<g id="node9" class="node"><title>/etc/resolv.conf</title>
 <polygon fill="none" stroke="blue" points="250.5,-114 179.5,-114 179.5,-78 256.5,-78 256.5,-108 250.5,-114"/>
 <polyline fill="none" stroke="blue" points="250.5,-114 250.5,-108 "/>
 <polyline fill="none" stroke="blue" points="256.5,-108 250.5,-108 "/>
 <text text-anchor="middle" x="218" y="-92.3" font-family="Times,serif" font-size="14.00" fill="blue">resolv.conf</text>
 </g>
 <!-- /etc/fstab -->
-<g id="node7" class="node"><title>/etc/fstab</title>
+<g id="node10" class="node"><title>/etc/fstab</title>
 <polygon fill="none" stroke="blue" points="239,-60 191,-60 191,-24 245,-24 245,-54 239,-60"/>
 <polyline fill="none" stroke="blue" points="239,-60 239,-54 "/>
 <polyline fill="none" stroke="blue" points="245,-54 239,-54 "/>
 <text text-anchor="middle" x="218" y="-38.3" font-family="Times,serif" font-size="14.00" fill="blue">fstab</text>
 </g>
+<!-- /etc/apache2/mods&#45;available/userdir.conf&#45;&gt;/home/stux/Desktop/dog.jpg -->
 <!-- /etc/apache2/mods&#45;available/php7.0.conf -->
-<g id="node8" class="node"><title>/etc/apache2/mods&#45;available/php7.0.conf</title>
-<polygon fill="none" stroke="blue" points="253,-228 177,-228 177,-192 259,-192 259,-222 253,-228"/>
-<polyline fill="none" stroke="blue" points="253,-228 253,-222 "/>
-<polyline fill="none" stroke="blue" points="259,-222 253,-222 "/>
-<text text-anchor="middle" x="218" y="-206.3" font-family="Times,serif" font-size="14.00" fill="blue">php7.0.conf</text>
-</g>
-<!-- /etc/apache2/mods&#45;available/userdir.conf -->
-<g id="node9" class="node"><title>/etc/apache2/mods&#45;available/userdir.conf</title>
+<g id="node12" class="node"><title>/etc/apache2/mods&#45;available/php7.0.conf</title>
 <polygon fill="none" stroke="blue" points="253,-174 177,-174 177,-138 259,-138 259,-168 253,-174"/>
 <polyline fill="none" stroke="blue" points="253,-174 253,-168 "/>
 <polyline fill="none" stroke="blue" points="259,-168 253,-168 "/>
-<text text-anchor="middle" x="218" y="-152.3" font-family="Times,serif" font-size="14.00" fill="blue">userdir.conf</text>
-</g>
-<!-- /etc/apache2/mods&#45;available/userdir.conf&#45;&gt;/home/stux/Desktop/dog.jpg -->
-<!-- /var/log/auth.log -->
-<g id="node10" class="node"><title>/var/log/auth.log</title>
-<polygon fill="none" stroke="blue" points="100.5,-68 45.5,-68 45.5,-32 106.5,-32 106.5,-62 100.5,-68"/>
-<polyline fill="none" stroke="blue" points="100.5,-68 100.5,-62 "/>
-<polyline fill="none" stroke="blue" points="106.5,-62 100.5,-62 "/>
-<text text-anchor="middle" x="76" y="-46.3" font-family="Times,serif" font-size="14.00" fill="blue">auth.log</text>
-</g>
-<!-- /var/log/apache2/error.log -->
-<g id="node11" class="node"><title>/var/log/apache2/error.log</title>
-<polygon fill="none" stroke="blue" points="102,-176 44,-176 44,-140 108,-140 108,-170 102,-176"/>
-<polyline fill="none" stroke="blue" points="102,-176 102,-170 "/>
-<polyline fill="none" stroke="blue" points="108,-170 102,-170 "/>
-<text text-anchor="middle" x="76" y="-154.3" font-family="Times,serif" font-size="14.00" fill="blue">error.log</text>
-</g>
-<!-- /var/log/apache2/error.log&#45;&gt;/etc/apache2/mods&#45;available/userdir.conf -->
-<!-- /var/log/apache2/access.log -->
-<g id="node12" class="node"><title>/var/log/apache2/access.log</title>
-<polygon fill="none" stroke="blue" points="106,-122 40,-122 40,-86 112,-86 112,-116 106,-122"/>
-<polyline fill="none" stroke="blue" points="106,-122 106,-116 "/>
-<polyline fill="none" stroke="blue" points="112,-116 106,-116 "/>
-<text text-anchor="middle" x="76" y="-100.3" font-family="Times,serif" font-size="14.00" fill="blue">access.log</text>
+<text text-anchor="middle" x="218" y="-152.3" font-family="Times,serif" font-size="14.00" fill="blue">php7.0.conf</text>
 </g>
 </g>
 </svg>

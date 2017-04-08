@@ -35,7 +35,6 @@ digraph G {
   # http://www.graphviz.org/content/global-subgraph-style-statements
   graph [shape="folder", style="rounded"];
   node [shape="note", color="blue", fontcolor="blue"];
-  edge [style=invis];
 EOF
 
 DirTree2dot($DT);

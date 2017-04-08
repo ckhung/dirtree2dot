@@ -12,7 +12,7 @@
 /media/sda1/hw/management.doc
 
 # the invisible edges make the graph look more squarish than longish:
-@"/var/log/apache2/error.log" ->
-@"/etc/apache2/mods-available/userdir.conf" ->
-@"/home/stux/Desktop/dog.jpg" ->
-@"/media/sda1/hw/history.doc";
+@ "/var/log/apache2/error.log" ->
+@ "/etc/apache2/mods-available/userdir.conf" ->
+@ "/home/stux/Desktop/dog.jpg" ->
+@ "/media/sda1/hw/history.doc" [style=invis] ;

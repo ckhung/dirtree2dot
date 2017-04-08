@@ -1,0 +1,19 @@
+/home/ckhung/work/config/.gnupg/pubring.gpg
+/home/ckhung/work/config/.ssh/id_dsa.pub
+/home/ckhung/work/config/.ssh/id_rsa.pub
+/home/ckhung/.gnupg/pubring.gpg
+/home/ckhung/.gnupg/secring.gpg
+/home/ckhung/.ssh/id_dsa
+/home/ckhung/.ssh/id_dsa.pub
+/home/ckhung/.ssh/id_rsa
+/home/ckhung/.ssh/id_rsa.pub
+/home/ckhung/private/config/.gnupg/secring.gpg
+/home/ckhung/private/config/.ssh/id_dsa
+/home/ckhung/private/config/.ssh/id_rsa
+
+@ "/home/ckhung/.gnupg/pubring.gpg" -> "/home/ckhung/work/config/.gnupg/pubring.gpg"
+@ "/home/ckhung/private/config/.gnupg/secring.gpg" -> "/home/ckhung/.gnupg/secring.gpg" [ dir=back; ];
+@ "/home/ckhung/private/config/.ssh/id_dsa" -> "/home/ckhung/.ssh/id_dsa" [ dir=back; ];
+@ "/home/ckhung/.ssh/id_dsa.pub" -> "/home/ckhung/work/config/.ssh/id_dsa.pub"
+@ "/home/ckhung/private/config/.ssh/id_rsa" -> "/home/ckhung/.ssh/id_rsa" [ dir=back; ];
+@ "/home/ckhung/.ssh/id_rsa.pub" -> "/home/ckhung/work/config/.ssh/id_rsa.pub"

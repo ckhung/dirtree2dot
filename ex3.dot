@@ -1,0 +1,65 @@
+digraph G {
+  rankdir = LR;
+  overlap = scale;
+  # http://www.graphviz.org/content/global-subgraph-style-statements
+  graph [shape="folder", style="rounded"];
+  node [shape="note", color="blue", fontcolor="blue"];
+  subgraph "cluster" {
+    label="/";
+    subgraph "cluster/home" {
+      label="home";
+      subgraph "cluster/home/ckhung" {
+        label="ckhung";
+        subgraph "cluster/home/ckhung/.gnupg" {
+          label=".gnupg";
+          "/home/ckhung/.gnupg/pubring.gpg" [ label="pubring.gpg"];
+          "/home/ckhung/.gnupg/secring.gpg" [ label="secring.gpg"];
+        }
+        subgraph "cluster/home/ckhung/private" {
+          label="private";
+          subgraph "cluster/home/ckhung/private/config" {
+            label="config";
+            subgraph "cluster/home/ckhung/private/config/.ssh" {
+              label=".ssh";
+              "/home/ckhung/private/config/.ssh/id_rsa" [ label="id_rsa"];
+              "/home/ckhung/private/config/.ssh/id_dsa" [ label="id_dsa"];
+            }
+            subgraph "cluster/home/ckhung/private/config/.gnupg" {
+              label=".gnupg";
+              "/home/ckhung/private/config/.gnupg/secring.gpg" [ label="secring.gpg"];
+            }
+          }
+        }
+        subgraph "cluster/home/ckhung/work" {
+          label="work";
+          subgraph "cluster/home/ckhung/work/config" {
+            label="config";
+            subgraph "cluster/home/ckhung/work/config/.gnupg" {
+              label=".gnupg";
+              "/home/ckhung/work/config/.gnupg/pubring.gpg" [ label="pubring.gpg"];
+            }
+            subgraph "cluster/home/ckhung/work/config/.ssh" {
+              label=".ssh";
+              "/home/ckhung/work/config/.ssh/id_dsa.pub" [ label="id_dsa.pub"];
+              "/home/ckhung/work/config/.ssh/id_rsa.pub" [ label="id_rsa.pub"];
+            }
+          }
+        }
+        subgraph "cluster/home/ckhung/.ssh" {
+          label=".ssh";
+          "/home/ckhung/.ssh/id_dsa.pub" [ label="id_dsa.pub"];
+          "/home/ckhung/.ssh/id_rsa.pub" [ label="id_rsa.pub"];
+          "/home/ckhung/.ssh/id_rsa" [ label="id_rsa"];
+          "/home/ckhung/.ssh/id_dsa" [ label="id_dsa"];
+        }
+      }
+    }
+  }
+   "/home/ckhung/.gnupg/pubring.gpg" -> "/home/ckhung/work/config/.gnupg/pubring.gpg"
+   "/home/ckhung/private/config/.gnupg/secring.gpg" -> "/home/ckhung/.gnupg/secring.gpg" [ dir=back; ];
+   "/home/ckhung/private/config/.ssh/id_dsa" -> "/home/ckhung/.ssh/id_dsa" [ dir=back; ];
+   "/home/ckhung/.ssh/id_dsa.pub" -> "/home/ckhung/work/config/.ssh/id_dsa.pub"
+   "/home/ckhung/private/config/.ssh/id_rsa" -> "/home/ckhung/.ssh/id_rsa" [ dir=back; ];
+   "/home/ckhung/.ssh/id_rsa.pub" -> "/home/ckhung/work/config/.ssh/id_rsa.pub"
+
+}
